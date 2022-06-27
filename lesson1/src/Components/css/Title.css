@@ -1,0 +1,9 @@
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:#f5f6fa;
+    color: red;
+    padding: 10px;
+    margin: 5px 0;
+}

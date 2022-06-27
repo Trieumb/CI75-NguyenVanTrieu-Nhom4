@@ -1,0 +1,11 @@
+.product{
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.name{
+    color: red;
+}
