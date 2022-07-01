@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.App {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.scrolling{
+  position: relative;
+  background-color:#f5f6fa;
+}
+h1{
+  color: cadetblue;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+button{
+  position: fixed;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
