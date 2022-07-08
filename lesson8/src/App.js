@@ -4,14 +4,18 @@ import './App.css';
 
 function App() {
 
+const [isLoading, setLoading] =  useState(false);
+
   const [products, setProducts] = useState(null);
   const [todos, setTodos] = useState(null);
   const [photos,setPhotos] = useState(null);
 
   const fetchData1 = async () => {
+    setLoading(true)
     const response1 = await fetch('https://fakestoreapi.com/products');
     const data1 = await response1.json();
     setProducts(data1);
+    setLoading(false);
   }
 
   const fetchData2 = async () => {
@@ -29,7 +33,7 @@ function App() {
   return (
     <div className="App">
         <div className='leftContent'>
-          <button onClick={fetchData1}>Call API</button>
+          <button onClick={fetchData1}>{isLoading ? "Loading..." : "Get all Product"}</button>
           { products !==null &&
             products.map((product,index) => 
                 <h3 key={index}>{product.title}</h3>

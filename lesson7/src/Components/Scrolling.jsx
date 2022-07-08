@@ -4,11 +4,11 @@ import React, { useEffect, useState } from 'react'
 const Scrolling = () => {
 
     const [scroll, setScroll] = useState(0)
-    useEffect ( () =>{
+    useEffect ( () => {
         document.addEventListener( 'scroll', () => {
             setScroll(document.documentElement.scrollTop);
         })
-    });
+    },[scroll]);
 
     const handleClick = () => {
         document.documentElement.scrollTop = 0;

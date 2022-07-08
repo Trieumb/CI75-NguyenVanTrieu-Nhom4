@@ -1,0 +1,67 @@
+.container{
+    min-height: 100vh;
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f6fa;
+}
+.title{
+    color: red;
+    padding: 20px;
+    font-size: 50px;
+}
+.icon{
+    color: white;
+    margin-left: 15px;
+}
+.formTodo{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+}
+.formTodo input{
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.formTodo button{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 7px 10px;
+    font-size: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    align-items: center;
+}
+.task-left{
+    display: flex;
+    align-items: center;
+}
+.task-left input{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+.task-title{
+    margin-left: 5px;
+}
+.task-right{
+    color: blueviolet;
+    cursor: pointer;
+}

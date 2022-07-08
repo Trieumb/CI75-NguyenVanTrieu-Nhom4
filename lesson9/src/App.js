@@ -10,6 +10,7 @@ function App() {
     <div className="App">
         <BrowserRouter>
           <Routes>
+              <Route path='/' element=""></Route>
               <Route path='/Components' element={< Products />}></Route>
               <Route path='/Components/:productId' element={< ProductDetail />}></Route>
           </Routes>
